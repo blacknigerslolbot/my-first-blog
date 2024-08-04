@@ -5,5 +5,5 @@ from django.http import HttpResponse
 def index(reguest):
     return render(reguest, 'blog/index.html', {})
 
-def categ(reguest):
-    return HttpResponse('<h1>page1</h1>')
+def categ(reguest, catid):
+    return HttpResponse(f'<h1>Число {catid}</h1>')
